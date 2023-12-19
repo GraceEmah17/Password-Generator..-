@@ -13,7 +13,7 @@ This week's challenge was to demonstrate how to generate passwords generator. We
 
 [link to github Password Generator](https://github.com/GraceEmah17/Password-Generator..-.git)
 
-![screenshot of password generator pages.](images/password-generator-screenshot.png)
+![screenshot of password generator pages.](./images/password-generator-screenshot.png)
 
-![screenshot of password generator pages.](images/password-generator-Screenshots.png)
+![screenshot of password generator pages.](./images/password-generator-Screenshots.png)
 
