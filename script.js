@@ -100,12 +100,52 @@ function getRandom(arr) {
 
 }
 
+document.getElementById("generate").addEventListener("click", function () {
+  generatePassword();
+});
+
 // Function to generate password with user input
 function generatePassword() {
   var length = document.getElementById("passwordLength").value;
   var upperCasedCharacters = document.getElementById(
     "upperCasedCharacters"
   ).checked;
+  var lowerCasedCharacters = document.getElementById(
+    "lowerCasedCharacters"
+  ).checked;
+  var specialCharacters = document.getElementById("specialCharacters").checked;
+  var numericCharacters = document.getElementById("numericCharacters").checked;
+
+  var charset = "";
+  var password = "";
+
+  if (upperCasedCharacters) {
+    charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
+
+  if (lowerCasedCharacters) {
+    charset += "abcdefghijklmnopqrstuvwxyz";
+  }
+
+  if (specialCharacters) {
+    charset += "@%+\\/'!#$^?:,)({}[]-_";
+  }
+
+  if (numericCharacters) {
+    charset += "0123456789";
+  }
+
+  if (charset.length === 0) {
+    alert("Please select at least one option for the password.");
+    return;
+  }
+
+  for (var i = 0; i < length; i++) {
+    var randomIndex = Math.floor(Math.random() * charset.length);
+    password += charset.charAt(randomIndex);
+  }
+
+  document.getElementById("password").textContent = password;
 }
 
 // Get references to the #generate element
@@ -119,5 +159,3 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);
