@@ -102,7 +102,10 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-
+  var length = document.getElementById("passwordLength").value;
+  var upperCasedCharacters = document.getElementById(
+    "upperCasedCharacters"
+  ).checked;
 }
 
 // Get references to the #generate element
