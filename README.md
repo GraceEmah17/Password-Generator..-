@@ -10,4 +10,10 @@ This week's challenge was for us to demonstrate how to generate passwords. We we
 
 
 [link to deployed account](https://graceemah17.github.io/Password-Generator..-/)
+
 [link to github Password Generator](https://github.com/GraceEmah17/Password-Generator..-.git)
+
+![screenshot of password generator pages.](images/password%20generator%20screenshot.png)
+
+![screenshot of password generator pages.](images/password%20generator%20Screenshots.png)
+
